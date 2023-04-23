@@ -1,0 +1,41 @@
+package com.job.assignment2;
+import java.util.*;
+public class question12 {
+	static int strStr(String haystack, String needle) 
+	{
+		if (needle == null || needle.length() == 0) 
+		{
+			return 0;
+	    }
+	    if (haystack == null || haystack.length() == 0) 
+	    {
+	    	return -1;
+	    }
+	    int n = haystack.length();
+	    int m = needle.length();
+	    for (int i = 0; i <= n - m; i++) 
+	    {
+	    	boolean found = true;
+	        for (int j = 0; j < m; j++) 
+	        {
+	        	if (haystack.charAt(i + j) != needle.charAt(j)) 
+	        	{
+	        		found = false;
+	                break;
+	            }
+	        }
+	        if (found) 
+	        {
+	        	return i;
+	        }
+	     }
+	     return -1;
+	    }
+	 public static void main(String[] args) 
+	 {
+		 Scanner sc=new Scanner(System.in);
+		 String haystack=sc.nextLine();
+		 String needle=sc.nextLine();
+		 System.out.print(strStr(haystack,needle));
+	 }
+}
