@@ -1,0 +1,47 @@
+package com.job.assignment2;
+import java.util.*;
+public class question11 
+{
+	private double balance;
+	public question11() 
+	{
+        this.balance = 0.0;
+    }
+	public question11(double initialBalance) 
+	{
+		this.balance = initialBalance;
+	}
+	public void deposit(double amount) 
+	{
+		this.balance += amount;
+	}
+	public void withdraw(double amount) 
+	{
+		if (amount > this.balance) 
+		{
+			System.out.println("Withdrawal denied. Insufficient balance.");
+	        this.balance -= 5.0; 
+	    }
+		else
+		{
+			this.balance -= amount;
+	    }
+	    }
+	public double getBalance() 
+	{
+		return this.balance;
+	}
+	public void computeInterest(double rate) 
+	{
+		double interest = this.balance * rate / 100;
+	    this.balance += interest;
+	}
+	public static void main(String[] args) 
+	{
+		question11 acc = new question11(1000.0); 
+		acc.withdraw(500.0); 
+		acc.computeInterest(2.5
+		System.out.println(acc.getBalance());
+	}
+	
+}
