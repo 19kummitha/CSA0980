@@ -1,0 +1,20 @@
+package com.job.assignment2;
+import java.util.*;
+public class question2 
+{
+	public static void main(String[] args) 
+	{
+		String s1,s2,s3;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string 1");
+		s1=sc.nextLine();
+		System.out.println("Enter the string 2");
+		s2=sc.nextLine();
+		System.out.println("Enter the sub string");
+		s3=sc.nextLine();
+		Boolean ends1=s1.endsWith(s3);
+		Boolean ends2=s2.endsWith(s3);
+		System.out.println(ends1);
+		System.out.println(ends2);
+	}
+}
