@@ -1,0 +1,24 @@
+ package com.job.assignment1;
+import java.util.*;
+public class pattern5 
+{
+	public static void main(String[] args) 
+	{
+		int n,i,j;
+		String c;
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		c=sc.next();
+		for(i=0;i<n;i++)
+		{
+			for(j=0;j<n;j++)
+			{
+				if(i>=j)
+				{
+					System.out.print(c);
+				}
+			}
+			System.out.println();
+		}
+	}
+}
