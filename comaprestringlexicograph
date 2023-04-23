@@ -1,0 +1,27 @@
+package com.job.assignment2;
+import java.util.*;
+public class question1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		String s1=sc.nextLine();
+		String s2=sc.nextLine();
+		System.out.println("string:"+s1);
+		System.out.println("string:"+s2);
+		int res=s1.compareTo(s2);
+		System.out.println(+res);
+		if(res<0)
+		{
+			System.out.println(s1+"is less than"+s2);
+		}
+		else if(res==0)
+		{
+			System.out.println(s1+" is equal to "+s2);
+		}
+		else
+		{
+			System.out.println(s1+"is greater than"+s2);
+		}
+	}
+}
