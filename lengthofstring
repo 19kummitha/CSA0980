@@ -1,0 +1,11 @@
+package com.job.assignment2;
+import java.util.*;
+public class question9 
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str = sc.nextLine();
+		int n=str.length();
+		System.out.println(+n);
+	}
+}
