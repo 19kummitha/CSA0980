@@ -1,0 +1,48 @@
+package com.job.assignment1;
+import java.util.*;
+public class meanmodemedian 
+{
+	public static void main(String[] args) 
+	{
+		int a[]= {16, 18, 27, 16, 23, 21, 19};
+		int sum=0;
+		int count=0;
+		int mode=0;
+		for(int i=0;i<7;i++)
+		{
+			sum+=a[i];
+		}
+		int mean=sum/7;
+		System.out.println("mean:"+mean);
+		int m=a[0];
+		for(int i=0;i<7;i++)
+		{
+			for(int j=0;j<7;j++)
+			{
+				if(a[i]<a[j]) 
+				{
+					m=a[i];
+					a[i]=a[j];
+					a[j]=m;
+				}
+			}
+		}
+	    System.out.println("median:"+a[3]);
+	    for(int i=0;i<7;i++)
+	    {
+	    	for(int j=i;j<7;j++)
+	    	{
+	    		if(a[i]==a[j])
+	    		{
+	    			count+=1;
+	    		}
+	    		if(count==1)
+	    		{
+	    			mode+=a[i];
+	    		}
+	    		
+	    	}
+	    }
+	    System.out.println("mode:"+mode);
+	}
+}
