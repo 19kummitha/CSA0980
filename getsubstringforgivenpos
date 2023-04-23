@@ -1,0 +1,11 @@
+package com.job.assignment2;
+import java.util.*;
+public class question6 {
+		public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			String str = sc.nextLine();
+			String new_str = str.substring(10,20);
+			System.out.println("Original string: " + str);
+			System.out.println("New String: " + new_str);
+		}
+}
