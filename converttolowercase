@@ -1,0 +1,12 @@
+package com.job.assignment2;
+import java.util.*;
+public class question8 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		String str = sc.nextLine();
+		String new_str = str.toLowerCase();
+		System.out.println(new_str);
+	}
+}
